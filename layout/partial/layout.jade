@@ -19,13 +19,16 @@ html(lang="zh-CN")
                         include footer
         button(class="material-scrolltop", type="button")
         script(src= url_for('js/bootstrap.min.js'))
-        script(src= url_for('js/jquery-migrate-1.2.1.min.js'))
         script(src= url_for('js/jquery.appear.js'))
         script(src= url_for('js/typography.min.js'))
         script(src= url_for('js/material-scrolltop.js'))
         script(src= url_for('js/prettify.js'))
-        script(src="js/L2Dwidget.min.js")
-        script() L2Dwidget.init({"model":{"jsonPath":"/live2d/remu/model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.9},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});
+        if(theme.live2d)
+            script(src="/js/L2Dwidget.min.js")
+            script()
+                |L2Dwidget.init({"model":{"jsonPath":"
+                = theme.live2d
+                |"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.9},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});
         if(page.mathjax)
             script() $(document).ready(function(){$.getScript("//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML",function(){MathJax.Hub.Config({tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}});var math=document.getElementsByClassName("entry-content")[0];MathJax.Hub.Queue(["Typeset",MathJax.Hub,math])})});
         script() $('body').materialScrollTop();

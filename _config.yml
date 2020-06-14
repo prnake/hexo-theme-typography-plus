@@ -33,3 +33,5 @@ themeStyle: light # light/dark
 
 # 备案号
 beian: '湘ICP备19014548号'
+
+live2d: /live2d/remu/model.json
