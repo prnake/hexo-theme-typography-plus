@@ -579,7 +579,7 @@ footer {
   font-weight: bold;
 }
 footer p {
-  color: #606975;
+  color: #606975 !important;
 }
 
 footer * {
