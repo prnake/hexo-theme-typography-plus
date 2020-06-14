@@ -463,7 +463,7 @@ body::before {
   padding: 60px 0;
   text-align: left;
   position: fixed;
-  bottom: -20px;
+  bottom: 0px;
 }
 
 .site-title-links ul {
