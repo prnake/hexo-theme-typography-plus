@@ -1,9 +1,9 @@
 hexo-theme-Typography
 ======
 
-![Head](https://github.com/SumiMakito/hexo-theme-typography/blob/master/_art/head.png?raw=true)
+![Head](README.assets/head.png)
 
-![Screenshot](https://github.com/SumiMakito/hexo-theme-typography/blob/master/_art/screenshot.png?raw=true)
+![Screenshot](_art/screenshot.png)
 
 [点击这里阅读简体中文版使用文档](https://github.com/SumiMakito/hexo-theme-typography/blob/master/README_zh-CN.md)
 
@@ -22,7 +22,6 @@ cd hexo # cd into the root directory of your Hexo blog
 ```bash
 yarn remove hexo-generator-category # we'll use hexo-generator-category-enhance instead
 yarn add hexo-renderer-jade hexo-generator-archive hexo-generator-category-enhance hexo-generator-feed hexo-generator-tag
-yarn add hexo-prism-plugin # for syntax highlighting
 ```
 
 #### Npm users
@@ -30,7 +29,6 @@ yarn add hexo-prism-plugin # for syntax highlighting
 ```bash
 npm uninstall --save hexo-generator-category # we'll use hexo-generator-category-enhance instead
 npm install --save hexo-renderer-jade hexo-generator-archive hexo-generator-category-enhance hexo-generator-feed hexo-generator-tag
-npm install --save hexo-prism-plugin # for syntax highlighting
 ```
 
 ### Installing the theme
@@ -51,14 +49,6 @@ theme: typography
 
 highlight:
   enable: false # we will use the prism plugin instead
-
-plugin:
-  - hexo-generator-category-enhance
-  - hexo-generator-feed
-  - hexo-asset-image
-  - hexo-prism-plugin
-  - hexo-toc
-  # ... other plugins you'd like to enable
 
 # Generate archive page
 archive_generator:
@@ -125,19 +115,6 @@ It is possible to control the length for all the summaries on the index page by 
 
 e.g. `truncate_len: 160`
 
-### Changing the color scheme
-
-You can find this option in theme's `_config.yml`.
-
-Currently, there are two color schemes available: 
-
-- light
-- dark
-
-``` yaml
-themeStyle: light
-```
-
 ### Set up the comment service
 
 The comment box is a place for readers to exchange their ideas with the author. Typography has integrated two 3rd-party comment services, and they are ready to use at any time.
@@ -167,14 +144,6 @@ showTag: true
 ### Set website favicon
 
 Prepare `favicon.png` file and put in `themes/typography/source/images/favicon.png`
-
-### Embed Google Analytics in your blog
-
-Find the line below in `themes/typography/source/js/google-analytics.js`:
-
-`ga('create', 'UA-73442912-1', 'auto');`
-
-Replace `UA-73442912-1` with your own google analytics id.
 
 ### SEO-friendly meta description tag
 
@@ -237,8 +206,12 @@ As for the jade templates inside `theme/typography/layout`, just edit them and r
 
 - [Makito](https://github.com/SumiMakito)
 - [pmtao](https://github.com/pmtao)
+- [journey-ad](https://github.com/journey-ad)
+- [prnake](https://github.com/prnake)
 
-## Support me
+## Support
+
+Please donate to the original author~
 
 I am a freelance student developer. (with bloody little income)
 
@@ -257,3 +230,7 @@ Thank you very much.
 © 2017-2018 Makito
 
 Typography is released under the MIT license.
+
+© 2020 Papersnake
+
+This project is forked from Typography and released under the MIT license.

@@ -1,9 +1,9 @@
 hexo-theme-Typography
 ======
 
-![Head](https://github.com/SumiMakito/hexo-theme-typography/blob/master/_art/head.png?raw=true)
+![Head](_art/head.png)
 
-![Screenshot](https://github.com/prnake/hexo-theme-typography-plus/blob/master/_art/screenshot.png?raw=true)
+![Screenshot](_art/screenshot.png)
 
 [Click here to read English documentation](https://github.com/SumiMakito/hexo-theme-typography/blob/master/README.md)
 
@@ -22,7 +22,6 @@ cd hexo # 进入 Hexo 博客根目录
 ```bash
 yarn remove hexo-generator-category # 此处我们使用 hexo-generator-category-enhance
 yarn add hexo-renderer-jade hexo-generator-archive hexo-generator-category-enhance hexo-generator-feed hexo-generator-tag
-yarn add hexo-prism-plugin # 语法高亮支持
 ```
 
 #### Npm 用户
@@ -30,7 +29,6 @@ yarn add hexo-prism-plugin # 语法高亮支持
 ```bash
 npm uninstall --save hexo-generator-category # 此处我们使用 hexo-generator-category-enhance
 npm install --save hexo-renderer-jade hexo-generator-archive hexo-generator-category-enhance hexo-generator-feed hexo-generator-tag
-npm install --save hexo-prism-plugin # 语法高亮支持
 ```
 
 ### 安装主题
@@ -162,14 +160,6 @@ showTag: true
 
 将 `favicon.png` 放置于 `themes/typography/source/images/favicon.png` 目录下即可。
 
-### 在博客中整合 Google Analytics
-
-在 `themes/typography/source/js/google-analytics.js` 中找到一下行：
-
-`ga('create', 'UA-73442912-1', 'auto');`
-
-并将 `UA-73442912-1` 替换为你的 ID 即可。
-
 ### 便于搜索引擎优化（SEO）的可选文章描述
 
 「活版印字」主题也整合了便于搜索引擎优化（SEO）的功能，你可以自定义要插入到博文 `<meta>` 区域的描述，以便于搜索引擎爬取。
@@ -235,8 +225,12 @@ yarn run build # yarn 用户
 
 - [Makito](https://github.com/SumiMakito)
 - [pmtao](https://github.com/pmtao)
+- [journey-ad](https://github.com/journey-ad)
+- [prnake](https://github.com/prnake)
 
 ## 支持开发者
+
+请给原作者打钱～
 
 咱是一个没有过多收入的学生开发者。
 
@@ -253,3 +247,7 @@ yarn run build # yarn 用户
 © 2017-2018 Makito
 
 「活版印字」主题遵循 MIT 许可协议分发。
+
+© 2020 Papersnake
+
+本项目遵循 MIT 许可协议对「活版印字」主题进行修改和分发。
