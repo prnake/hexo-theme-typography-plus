@@ -1,7 +1,7 @@
 hexo-theme-Typography
 ======
 
-![Head](README.assets/head.png)
+![Head](_art/head.png)
 
 ![Screenshot](_art/screenshot.png)
 
