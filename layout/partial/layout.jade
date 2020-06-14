@@ -1,0 +1,33 @@
+doctype
+html(lang="zh-CN")
+    include asciiart
+    head
+        include head
+
+    body
+        div#stage.container
+            div.row
+                include sidebar
+                div#main-container.col-sm-9.col-xs-12.main-container.invisible
+                    block content
+                    if(theme.hitokoto)
+                        script() hitokoto();
+                    script() $(document).on("pjax:complete",function(){$("pre").addClass("prettyprint linenums");prettyPrint();setTime()});
+                    if(page.mathjax)
+                        script() $(document).on("pjax:complete",function(){$.getScript("//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML",function(){MathJax.Hub.Config({tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}});var math=document.getElementsByClassName("entry-content")[0];MathJax.Hub.Queue(["Typeset",MathJax.Hub,math])})});
+                    div.visible-xs.site-bottom-footer
+                        include footer
+        button(class="material-scrolltop", type="button")
+        script(src= url_for('js/bootstrap.min.js'))
+        script(src= url_for('js/jquery-migrate-1.2.1.min.js'))
+        script(src= url_for('js/jquery.appear.js'))
+        script(src= url_for('js/typography.min.js'))
+        script(src= url_for('js/material-scrolltop.js'))
+        script(src= url_for('js/prettify.js'))
+        script(src="js/L2Dwidget.min.js")
+        script() L2Dwidget.init({"model":{"jsonPath":"/live2d/remu/model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.9},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});
+        if(page.mathjax)
+            script() $(document).ready(function(){$.getScript("//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML",function(){MathJax.Hub.Config({tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}});var math=document.getElementsByClassName("entry-content")[0];MathJax.Hub.Queue(["Typeset",MathJax.Hub,math])})});
+        script() $('body').materialScrollTop();
+        script() function setTime(){var h=new Date(2019, 6, 21, 12, 0, 0),k=((new Date).getTime()-h.getTime())/86400000,g=Math.floor(k),d=24*(k-g),j=Math.floor(d),c=60*(d-j),f=Math.floor(60*(d-j)),b=Math.floor(60*(c-f));document.getElementById("since").innerHTML="博客已运行"+g+"天"+j+"小时"+f+"分"+b+"秒"}setInterval(setTime,1000);setTime();
+        script() $(document).ready(function(){$("pre").addClass("prettyprint linenums");prettyPrint()});
