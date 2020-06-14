@@ -21,14 +21,14 @@ cd hexo # 进入 Hexo 博客根目录
 
 ```bash
 yarn remove hexo-generator-category # 此处我们使用 hexo-generator-category-enhance
-yarn add hexo-renderer-jade hexo-generator-archive hexo-generator-category-enhance hexo-generator-feed hexo-generator-tag
+yarn add hexo-renderer-jade hexo-generator-archive hexo-generator-category-enhance hexo-generator-feed hexo-generator-tag hexo-generator-index hexo-all-minifier hexo-filter-nofollow hexo-generator-baidu-sitemap hexo-generator-sitemap hexo-reference hexo-renderer-marked hexo-server hexo-tag-cplayer hexo-tag-mplayer hexo-toc hexo-wordcount
 ```
 
 #### Npm 用户
 
 ```bash
 npm uninstall --save hexo-generator-category # 此处我们使用 hexo-generator-category-enhance
-npm install --save hexo-renderer-jade hexo-generator-archive hexo-generator-category-enhance hexo-generator-feed hexo-generator-tag
+npm install --save hexo-renderer-jade hexo-generator-archive hexo-generator-category-enhance hexo-generator-feed hexo-generator-tag hexo-generator-index hexo-all-minifier hexo-filter-nofollow hexo-generator-baidu-sitemap hexo-generator-sitemap hexo-reference hexo-renderer-marked hexo-server hexo-tag-cplayer hexo-tag-mplayer hexo-toc hexo-wordcount
 ```
 
 ### 安装主题

@@ -5,7 +5,7 @@ hexo-theme-Typography
 
 ![Screenshot](_art/screenshot.png)
 
-[点击这里阅读简体中文版使用文档](https://github.com/SumiMakito/hexo-theme-typography/blob/master/README_zh-CN.md)
+[点击这里阅读简体中文版使用文档](https://github.com/prnake/hexo-theme-typography-plus/blob/master/README_zh-CN.md)
 
 ## Installing
 
@@ -21,14 +21,14 @@ cd hexo # cd into the root directory of your Hexo blog
 
 ```bash
 yarn remove hexo-generator-category # we'll use hexo-generator-category-enhance instead
-yarn add hexo-renderer-jade hexo-generator-archive hexo-generator-category-enhance hexo-generator-feed hexo-generator-tag
+yarn add hexo-renderer-jade hexo-generator-archive hexo-generator-category-enhance hexo-generator-feed hexo-generator-tag hexo-generator-index hexo-all-minifier hexo-filter-nofollow hexo-generator-baidu-sitemap hexo-generator-sitemap hexo-reference hexo-renderer-marked hexo-server hexo-tag-cplayer hexo-tag-mplayer hexo-toc hexo-wordcount
 ```
 
 #### Npm users
 
 ```bash
 npm uninstall --save hexo-generator-category # we'll use hexo-generator-category-enhance instead
-npm install --save hexo-renderer-jade hexo-generator-archive hexo-generator-category-enhance hexo-generator-feed hexo-generator-tag
+npm install --save hexo-renderer-jade hexo-generator-archive hexo-generator-category-enhance hexo-generator-feed hexo-generator-tag hexo-generator-index hexo-all-minifier hexo-filter-nofollow hexo-generator-baidu-sitemap hexo-generator-sitemap hexo-reference hexo-renderer-marked hexo-server hexo-tag-cplayer hexo-tag-mplayer hexo-toc hexo-wordcount
 ```
 
 ### Installing the theme
