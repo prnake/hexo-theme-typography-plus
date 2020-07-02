@@ -43,9 +43,9 @@ mixin make_post(item, is_detail)
                     span.leancloud-visitors-count
                 | &nbsp;次。
         if is_detail
-            p.post-abstract!= item.content.replace(/show_me_more/, ' ')
+            p.post-abstract!= item.content
         else
-            p.post-abstract!= truncate(strip_html(item.content.replace(/<script(?: |>)[^]*?<\/script>/gm, ' ').replace(/show_me_more[\w\W]*/, ' ')), {length: 120})
+            p.post-abstract!= truncate(strip_html(item.excerpt.replace(/<script(?: |>)[^]*?<\/script>/gm, ' ')), {length: 120})
 
 mixin make_page_links()
     if site.pages
