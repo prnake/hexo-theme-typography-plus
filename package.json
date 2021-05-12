@@ -44,7 +44,7 @@
     "lazyload": "^2.0.0-rc.2",
     "leancloud-storage": "^4.0.0",
     "nprogress": "^0.2.0",
-    "postcss": "^7.0.5",
+    "postcss": "^8.2.10",
     "postcss-cli": "^6.0.0",
     "scss-compile": "^0.1.7",
     "uglify-js": "^3.7.1",
